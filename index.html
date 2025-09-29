@@ -1,0 +1,123 @@
+<!--
+  Archivo: index.html
+  Uso: sube este archivo a un repo en GitHub y activa GitHub Pages.
+  Cambia: correo, descripción, links o proyectos según necesites.
+-->
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jaime Villaneda — Portafolio</title>
+  <meta name="description" content="Portafolio profesional de Jaime Villaneda — desarrollador de software. Proyectos: AtlasPOS, rimworld_sim, y más." />
+  <style>
+    :root{--accent:#4f46e5;--bg:#0b1220;--muted:#9aa3b2}
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;background:linear-gradient(180deg,#071022 0%, #07172b 100%);color:#e6eef8;margin:0;line-height:1.5}
+    .container{max-width:980px;margin:28px auto;padding:22px}
+    header{display:flex;align-items:center;gap:14px}
+    .avatar{width:88px;height:88px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#7b9bf0);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:30px}
+    h1{margin:0;font-size:26px}
+    p.lead{color:var(--muted);margin-top:6px}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px;margin-top:20px}
+    .card{background:rgba(255,255,255,0.03);padding:18px;border-radius:12px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .skill{padding:6px 10px;border-radius:999px;background:rgba(255,255,255,0.03);font-size:13px;color:var(--muted)}
+    .projects{display:flex;flex-direction:column;gap:12px;margin-top:12px}
+    .proj{padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));display:flex;justify-content:space-between;align-items:center}
+    .proj a{color:var(--accent);text-decoration:none;font-weight:600}
+    footer{margin-top:22px;color:var(--muted);font-size:13px}
+    .contact-btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:white;text-decoration:none;font-weight:600;margin-top:8px}
+    @media(max-width:920px){.grid{grid-template-columns:1fr;}.avatar{width:72px;height:72px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">JV</div>
+      <div>
+        <h1>Jaime Villaneda — Desarrollador de Software</h1>
+        <p class="lead">Construyo soluciones web y sistemas pos. Me especializo en proyectos prácticos para pymes: integraciones de pagos, sistemas multitenant y software a medida.</p>
+        <p style="margin:6px 0 0 0;color:var(--muted);font-size:13px">GitHub: <a href="https://github.com/JaimeVillaneda" target="_blank" style="color:var(--accent)">github.com/JaimeVillaneda</a> · LinkedIn: <a href="https://www.linkedin.com/in/villaneda-jaime" target="_blank" style="color:var(--accent)">villaneda-jaime</a></p>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <div class="card">
+          <h3>Sobre mí</h3>
+          <p class="lead">Soy estudiante de Ingeniería en Sistemas y desarrollador con experiencia en Python, JavaScript y arquitecturas web. Me gustan los productos técnicos que resuelven problemas reales a negocios pequeños y medianos.</p>
+
+          <h4 style="margin-top:12px">Habilidades</h4>
+          <div class="skills">
+            <div class="skill">Python</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">React</div>
+            <div class="skill">Pygame</div>
+            <div class="skill">Django / Flask</div>
+            <div class="skill">SQL</div>
+          </div>
+
+          <h4 style="margin-top:14px">Proyectos destacados</h4>
+          <div class="projects">
+            <div class="proj">
+              <div>
+                <strong>AtlasPOS</strong>
+                <div style="color:var(--muted);font-size:13px">Sistema POS multitenant: facturación, gestión de ventas e integraciones (proyecto propio).</div>
+              </div>
+              <div><a href="https://github.com/JaimeVillaneda/atlaspos" target="_blank">Ver repo</a></div>
+            </div>
+
+            <div class="proj">
+              <div>
+                <strong>rimworld_sim</strong>
+                <div style="color:var(--muted);font-size:13px">Juego/simulación estilo RimWorld hecho en Python (Pygame) — IA básica, construcción y recolección.</div>
+              </div>
+              <div><a href="https://github.com/JaimeVillaneda/rimworld_sim" target="_blank">Ver repo</a></div>
+            </div>
+
+            <!-- Agrega más proyectos copiando este bloque y editando título/descripcion/link -->
+          </div>
+
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h3>Experiencia</h3>
+          <ul style="margin:6px 0 0 18px;color:var(--muted)">
+            <li>Aprendiz en Jagesoft: soporte y desarrollo de módulos.</li>
+            <li>Desarrollo de integraciones con pasarelas de pago y facturación electrónica.</li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h3>Servicios</h3>
+          <div style="color:var(--muted);margin-top:8px">Desarrollo web a medida · Integración POS · Corrección de bugs · Soporte y mantenimiento</div>
+        </div>
+
+        <footer>
+          <p>¿Quieres que personalice esto con tu foto, correo y textos exactos? Hazmelo saber y lo actualizo.</p>
+        </footer>
+      </main>
+
+      <aside>
+        <div class="card">
+          <h3>Contacto</h3>
+          <p style="color:var(--muted)">Correo: <strong>tu@correo.com</strong> <!-- cambia esto --> </p>
+          <p style="color:var(--muted)">Ubicación: Pereira, Colombia</p>
+
+          <h4 style="margin-top:12px">Disponibilidad</h4>
+          <p style="color:var(--muted)">Freelance · Proyectos por contrato · Tiempo parcial</p>
+
+          <a class="contact-btn" href="mailto:tu@correo.com?subject=Contacto%20desde%20portafolio">Contactar</a>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h3>Descarga CV</h3>
+          <p style="color:var(--muted)">Añade tu CV en la raíz como <code>cv.pdf</code> y vincula aquí.</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</body>
+</html>
